@@ -1,0 +1,4 @@
+<?php
+require __DIR__.'/includes/bootstrap.php';$user=require_user(true);
+try{$id=id_value($_GET['id']??'');$d=query('SELECT * FROM documents WHERE id=?',[$id])->fetch();if(!$d||!preg_match('/^[a-f0-9]{64}$/D',$d['stored_name']))throw new ValidationError('Not found');$file=private_path('documents/'.$d['stored_name']);if(!is_file($file)||is_link($file))throw new ValidationError('Not found');}catch(ValidationError $ex){http_response_code(404);exit('Document not found.');}
+audit('document_downloaded','documents',$id);session_write_close();header('Content-Type: application/octet-stream');header("Content-Security-Policy: sandbox; default-src 'none'");header('Content-Disposition: attachment; filename="document-'.$id.'.'.pathinfo($d['original_name'],PATHINFO_EXTENSION).'"; filename*=UTF-8\'\''.rawurlencode($d['original_name']));header('Content-Length: '.filesize($file));readfile($file);exit;

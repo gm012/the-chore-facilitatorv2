@@ -1,0 +1,25 @@
+/* Functional additions only. Existing page design stays in its original stylesheets. */
+.cookie-settings { display:block; border:0; background:none; color:inherit; font:inherit; padding:0; margin-top:12px; cursor:pointer; text-align:left; text-decoration:underline; text-underline-offset:4px; }
+.back-top-row { display:flex; justify-content:flex-end; padding-block:16px 24px; }
+.back-to-top { display:inline-flex; gap:12px; align-items:center; min-height:44px; padding:8px 16px; border:1px solid currentColor; border-radius:4px; color:inherit; }
+.cookie-dialog { position:fixed; inset:0; margin:auto; width:min(540px,calc(100% - 32px)); max-height:calc(100dvh - 32px); overflow:auto; padding:28px; border:1px solid var(--line); border-radius:8px; background:var(--canvas); color:var(--charcoal); }
+.cookie-dialog::backdrop { background:rgb(0 0 0 / 45%); }
+.cookie-dialog h2 { font-size:1.5rem; margin-bottom:16px; }
+.cookie-dialog p { margin-block:12px; }
+.cookie-dialog button { background:var(--deep-teal); color:white; border:0; border-radius:4px; min-height:44px; padding:10px 20px; font:inherit; cursor:pointer; margin-top:16px; }
+.cookie-dialog a { text-decoration:underline; }
+.consent-options { border:1px solid var(--line); padding:12px; }
+.consent-options label { display:flex; align-items:center; flex-wrap:wrap; gap:8px; padding:10px 0; }
+.consent-options input { width:20px; height:20px; accent-color:var(--deep-teal); }
+.consent-options small { font-size:.85em; }
+.consent-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.consent-actions button { min-height:44px; padding:10px 16px; background:var(--deep-teal); color:white; font:inherit; border:1px solid var(--deep-teal); border-radius:4px; cursor:pointer; }
+.consent-actions button:disabled { opacity:.55; cursor:not-allowed; }
+.consent-banner { position:fixed; z-index:2000; bottom:0; left:0; right:0; max-height:60dvh; overflow:auto; padding:20px max(16px,calc((100vw - 1280px)/2)); background:var(--canvas); color:var(--charcoal); border-top:1px solid var(--line); box-shadow:0 -5px 25px #0002; }
+.consent-banner p { margin-bottom:12px; }
+.consent-banner a { text-decoration:underline; }
+.form-status { flex-basis:100%; overflow-wrap:anywhere; }
+.form-trap { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+[aria-busy="true"] { cursor:progress; }
+button:disabled { cursor:not-allowed; }
+.site-header:focus-within { transform:none !important; }

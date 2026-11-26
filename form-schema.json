@@ -1,0 +1,452 @@
+{
+  "candidate": [
+    {
+      "name": "full_name",
+      "required": true,
+      "type": "text",
+      "max": 160
+    },
+    {
+      "name": "email",
+      "required": true,
+      "type": "email",
+      "max": 190
+    },
+    {
+      "name": "contact_number",
+      "required": true,
+      "type": "tel",
+      "max": 40
+    },
+    {
+      "name": "area",
+      "required": true,
+      "type": "text",
+      "max": 160
+    },
+    {
+      "name": "roles[]",
+      "required": true,
+      "type": "checkbox",
+      "allowed": [
+        "nanny",
+        "domestic",
+        "night-nurse",
+        "housekeeper"
+      ],
+      "max": 255
+    },
+    {
+      "name": "experience_years",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "less-than-1",
+        "1-2",
+        "3-5",
+        "6-10",
+        "10-plus"
+      ],
+      "max": 255
+    },
+    {
+      "name": "languages",
+      "required": false,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "experience_summary",
+      "required": true,
+      "type": "textarea",
+      "max": 5000
+    },
+    {
+      "name": "preferred_arrangement",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "live-in",
+        "live-out",
+        "either"
+      ],
+      "max": 255
+    },
+    {
+      "name": "preferred_schedule",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "full-time",
+        "part-time",
+        "flexible"
+      ],
+      "max": 255
+    },
+    {
+      "name": "availability",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "immediately",
+        "within-2-weeks",
+        "within-1-month",
+        "other"
+      ],
+      "max": 160
+    },
+    {
+      "name": "travel",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "yes",
+        "no",
+        "sometimes"
+      ],
+      "max": 255
+    },
+    {
+      "name": "drivers_license",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "yes",
+        "no"
+      ],
+      "max": 255
+    },
+    {
+      "name": "own_vehicle",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "yes",
+        "no"
+      ],
+      "max": 255
+    },
+    {
+      "name": "first_aid",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "yes",
+        "no",
+        "expired"
+      ],
+      "max": 255
+    },
+    {
+      "name": "references_available",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "yes",
+        "no",
+        "some"
+      ],
+      "max": 255
+    },
+    {
+      "name": "additional_information",
+      "required": false,
+      "type": "textarea",
+      "max": 5000
+    },
+    {
+      "name": "privacy_consent",
+      "required": true,
+      "type": "checkbox",
+      "allowed": [
+        "on"
+      ],
+      "max": 255
+    }
+  ],
+  "client": [
+    {
+      "name": "full_name",
+      "required": true,
+      "type": "text",
+      "max": 160
+    },
+    {
+      "name": "email",
+      "required": true,
+      "type": "email",
+      "max": 190
+    },
+    {
+      "name": "contact_number",
+      "required": true,
+      "type": "tel",
+      "max": 40
+    },
+    {
+      "name": "residential_area",
+      "required": true,
+      "type": "text",
+      "max": 160
+    },
+    {
+      "name": "alternative_contact_name",
+      "required": false,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "alternative_contact_number",
+      "required": false,
+      "type": "tel",
+      "max": 40
+    },
+    {
+      "name": "number_of_children",
+      "required": false,
+      "type": "number",
+      "max": 255
+    },
+    {
+      "name": "school",
+      "required": false,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "household_lifestyle",
+      "required": false,
+      "type": "textarea",
+      "max": 5000
+    },
+    {
+      "name": "service_required",
+      "required": true,
+      "type": "select",
+      "allowed": [
+        "nanny",
+        "domestic",
+        "night-nurse",
+        "housekeeper",
+        "not-sure"
+      ],
+      "max": 255
+    },
+    {
+      "name": "language_requirements",
+      "required": false,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "literacy_required",
+      "required": false,
+      "type": "radio",
+      "allowed": [
+        "yes",
+        "no",
+        "not-sure"
+      ],
+      "max": 255
+    },
+    {
+      "name": "candidate_duties",
+      "required": true,
+      "type": "textarea",
+      "max": 5000
+    },
+    {
+      "name": "weekday_hours",
+      "required": false,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "weekend_hours",
+      "required": false,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "living_arrangement",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "live-in",
+        "live-out",
+        "either",
+        "not-sure"
+      ],
+      "max": 255
+    },
+    {
+      "name": "preferred_start_date",
+      "required": false,
+      "type": "date",
+      "max": 255
+    },
+    {
+      "name": "salary_live_in",
+      "required": false,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "salary_live_out",
+      "required": false,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "payroll_arrangement",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "standard-placement",
+        "payroll-interest",
+        "not-sure"
+      ],
+      "max": 255
+    },
+    {
+      "name": "drivers_license",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "required",
+        "not-required",
+        "preferred"
+      ],
+      "max": 255
+    },
+    {
+      "name": "vehicle_arrangement",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "own-vehicle",
+        "vehicle-supplied",
+        "not-applicable"
+      ],
+      "max": 255
+    },
+    {
+      "name": "meal_preparation",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "yes",
+        "no",
+        "sometimes"
+      ],
+      "max": 255
+    },
+    {
+      "name": "first_aid_required",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "required",
+        "preferred",
+        "not-required"
+      ],
+      "max": 255
+    },
+    {
+      "name": "holiday_travel",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "yes",
+        "no",
+        "occasionally"
+      ],
+      "max": 255
+    },
+    {
+      "name": "pets_groceries_errands",
+      "required": false,
+      "type": "textarea",
+      "max": 5000
+    },
+    {
+      "name": "health_considerations",
+      "required": false,
+      "type": "select",
+      "allowed": [
+        "yes",
+        "no",
+        "prefer-to-discuss"
+      ],
+      "max": 255
+    },
+    {
+      "name": "additional_notes",
+      "required": false,
+      "type": "textarea",
+      "max": 5000
+    },
+    {
+      "name": "privacy_consent",
+      "required": true,
+      "type": "checkbox",
+      "allowed": [
+        "on"
+      ],
+      "max": 255
+    }
+  ],
+  "contact": [
+    {
+      "name": "full_name",
+      "required": true,
+      "type": "text",
+      "max": 160
+    },
+    {
+      "name": "email",
+      "required": true,
+      "type": "email",
+      "max": 190
+    },
+    {
+      "name": "contact_number",
+      "required": false,
+      "type": "tel",
+      "max": 40
+    },
+    {
+      "name": "enquiry_type",
+      "required": true,
+      "type": "select",
+      "allowed": [
+        "client-placement",
+        "candidate-application",
+        "payroll",
+        "general"
+      ],
+      "max": 255
+    },
+    {
+      "name": "subject",
+      "required": true,
+      "type": "text",
+      "max": 255
+    },
+    {
+      "name": "message",
+      "required": true,
+      "type": "textarea",
+      "max": 5000
+    },
+    {
+      "name": "privacy_consent",
+      "required": true,
+      "type": "checkbox",
+      "allowed": [
+        "on"
+      ],
+      "max": 255
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<?php
+require __DIR__.'/includes/bootstrap.php';require __DIR__.'/includes/layout.php';start_session();if(current_user())redirect('admin/dashboard.php');$error='';
+if($_SERVER['REQUEST_METHOD']==='POST'){check_csrf();$email=is_string($_POST['email']??null)?substr($_POST['email'],0,190):'';$password=is_string($_POST['password']??null)?substr($_POST['password'],0,1024):'';if(login_user($email,$password))redirect('admin/dashboard.php');$error='Invalid login credentials.';}
+page_header('Staff sign in');if($error)echo '<p class="notice error" role="alert">'.e($error).'</p>';
+echo '<form method="post">'.csrf_input().'<label class="field">Email<input name="email" type="email" autocomplete="username" required maxlength="190"></label><label class="field">Password<input name="password" type="password" autocomplete="current-password" required maxlength="1024"></label><button>Sign in</button></form><p><a href="'.e(url('admin/reset.php')).'">Forgot your password?</a></p><p class="muted">Authorised staff only. Access is recorded.</p>';page_footer();

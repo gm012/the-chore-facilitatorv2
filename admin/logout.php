@@ -1,0 +1,1 @@
+<?php require __DIR__.'/includes/bootstrap.php';$user=require_user();if($_SERVER['REQUEST_METHOD']!=='POST'){http_response_code(405);exit;}check_csrf();audit('logout','admin_users',(int)$user['id']);end_session();redirect('admin/login.php');
