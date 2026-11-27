@@ -16,7 +16,7 @@
 .site-header:focus-within,.site-header:has(#mainNav.open) { transform:translateY(0); }
 .footer-strip { background:var(--mint); border-top:1px solid var(--line); font-size:13px; }
 .footer-strip .wrap { display:flex; justify-content:space-between; gap:20px; padding-block:18px; }
-.text-highlight { background:#f5e69e; color:#233b36; padding:.1em .08em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+
 .hero-picture>img { height:650px; }
 .card-photo img { height:310px; object-position:50% 35%; }
 .conversation-photo img { aspect-ratio:3/2; height:auto; object-fit:contain; }
